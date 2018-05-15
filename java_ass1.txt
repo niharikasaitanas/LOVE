@@ -1,0 +1,31 @@
+import java.util.Scanner;  
+class ScannerTest{  
+ public static void main(String args[]){  
+   Scanner sc=new Scanner(System.in);  
+     
+   System.out.println("Enter your name");  
+   String name=sc.nextLine();  
+   System.out.println("Enter your age");  
+   int age=sc.nextInt();  
+   System.out.println("Enter your blood group");  
+   String blood_group=sc.nextLine();  
+   sc.close(); 
+   String message;
+   if(age>=20)
+{
+message = "RED";}
+elseif(age >=15 && age<20)
+{
+message ="BLUE";}
+else
+{
+message ="YELLOW";}
+
+  System.out.println("_________________________________________________________");
+  System.out.println("Name:"+name);  
+  System.out.println("Age"+age);
+  System.out.println("Blood Group:"+blood_group);
+  System.out.println("__________________________________________________________");
+  System.out.println("Your group is"+message);  
+  System.out.println("__________________________________________________________");
+ }  }
